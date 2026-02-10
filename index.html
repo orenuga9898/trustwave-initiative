@@ -337,23 +337,18 @@ function closeAll() {
 </script>
 
 <script>
-document.getElementById("submitBtn").addEventListener("click", function (e) {
-  e.preventDefault(); // stop immediate form submission
-
+document.getElementById("submitBtn").addEventListener("click", function () {
   gtag('event', 'submit_claim_clicked', {
     event_category: 'engagement',
     event_label: 'Submit & Claim Button'
   });
-
-  // Allow form submission after a short delay
-  setTimeout(() => {
-    e.target.closest("form").submit();
-  }, 300);
 });
 </script>
+
   
 </body>
 </html>
+
 
 
 
